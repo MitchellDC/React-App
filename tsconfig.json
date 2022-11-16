@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "../Toast2/src/pages/Toast.tsx"  ]
 }

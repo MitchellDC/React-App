@@ -1,8 +1,9 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonFab, IonFabButton, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { RouteComponentProps } from 'react-router-dom';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 
-const Home: React.FC = () => {
+const Home: React.FC<RouteComponentProps> = (props) =>  {
   return (
     <IonPage>
       <IonHeader>
@@ -17,6 +18,10 @@ const Home: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer />
+        <IonFab>
+        <IonFabButton onClick={() => props.history.push('/Toastapi')}>
+        </IonFabButton>
+        </IonFab>
       </IonContent>
     </IonPage>
   );

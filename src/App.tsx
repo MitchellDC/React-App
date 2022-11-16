@@ -21,6 +21,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import showHelloToast from './pages/Toastapi';
+
 
 setupIonicReact();
 
@@ -29,7 +31,8 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
-          <Home />
+        <Route path= "/home" component={Home} exact={true} />
+        <Route path= "/Toastapi" component={showHelloToast} exact={true} />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
