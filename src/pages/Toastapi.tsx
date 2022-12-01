@@ -22,16 +22,6 @@ const showHelloToast: React.FC<RouteComponentProps> =  (props) => {
 };
 
 
-// function Example() {
-//   const [p] = useIonToast();
-
-//   const presentToast = (position: 'bottom') => {
-//     p({
-//       message: 'Hello World!',
-//       duration: 1500,
-//       position: position
-//     });
-//   };
 
 
 
