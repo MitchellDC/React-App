@@ -23,6 +23,8 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import showHelloToast from './pages/Toastapi';
 import main from './pages/main';
+import card from './pages/cards';
+import FcCompTemp from './pages/fcCompTemp';
 
 
 setupIonicReact();
@@ -34,6 +36,8 @@ const App: React.FC = () => (
         <Route exact path="/main">
         <Route path= "/main" component={main} exact={true} />
         <Route path= "/Toastapi" component={showHelloToast} exact={true} />
+        <Route path= "/cards" component={card} exact={true} />
+        <Route path="/fcCompTemp" component={FcCompTemp} exact={true} />
         </Route>
         <Route exact path="/">
           <Redirect to="/main" />

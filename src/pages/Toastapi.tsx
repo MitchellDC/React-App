@@ -18,7 +18,7 @@ const showHelloToast: React.FC<RouteComponentProps> =  (props) => {
     <>
       <IonButton expand="block" onClick={() => showToasty()}>Present Toast At the Bottom</IonButton>
     </>
-  );
+  );  
 };
 
 

@@ -1,11 +1,25 @@
-// componentDidMount() {
-//     const requestOptions = {
-//         method: 'POST', 
-//         headers: { 'Content-Type': 'application/json' },
-//         body: JSON.stringify({ title: 'React Post' })
-//     };
-//     fetch('https://reqres.in/api/posts', requestOptions)
-//     .then(responce => responce.json())
-//     .then(data => this.setState({ postId: data.id }))
-// }
+import React, {Component} from 'react'; 
+import axios from 'axios'
 
+class App extends Component {
+    constructor(props: {} | Readonly<{}>) {
+        super(props);
+        this.state={
+            players:[]
+        }
+    }
+
+    async componentDidMount() {
+        
+    }
+
+    render() {
+        return(
+            <div className='App'>
+            <h1>Hi</h1>
+            </div>
+        )
+    }
+}
+
+export default App; 
