@@ -16,7 +16,7 @@ const showHelloToast: React.FC<RouteComponentProps> =  (props) => {
 );
   return (
     <>
-      <IonButton expand="block" onClick={() => showToasty()}>Would you like to receive notifications from a live game?</IonButton>
+      <IonButton onClick={() => showToasty()}>Would you like to receive notifications from a live game?</IonButton>
     </>
   );  
 };
