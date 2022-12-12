@@ -7,7 +7,7 @@ import { RouteComponentProps } from 'react-router-dom';
 const showHelloToast: React.FC<RouteComponentProps> =  (props) => {
   const showToasty = async () => (
     await Toast.show({
-      text: 'Hello!',
+      text: 'You will now be receiving notifications!',
       duration: 'short',
       position: 'center',
   
@@ -16,7 +16,7 @@ const showHelloToast: React.FC<RouteComponentProps> =  (props) => {
 );
   return (
     <>
-      <IonButton expand="block" onClick={() => showToasty()}>Present Toast At the Bottom</IonButton>
+      <IonButton expand="block" onClick={() => showToasty()}>Would you like to receive notifications from a live game?</IonButton>
     </>
   );  
 };

@@ -3,5 +3,9 @@
     "CapacitorHttp": {
       "enabled": true
     }
-  }
+  },
+  "appId": "com.example.app",
+  "appName": "nbaApp",
+  "webDir": "build",
+  "bundledWebRuntime": false
 }

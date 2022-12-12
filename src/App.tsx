@@ -25,6 +25,7 @@ import showHelloToast from './pages/Toastapi';
 import main from './pages/main';
 import card from './pages/cards';
 import FcCompTemp from './pages/fcCompTemp';
+import tickets from './pages/tickets';
 
 
 setupIonicReact();
@@ -38,6 +39,8 @@ const App: React.FC = () => (
         <Route path= "/Toastapi" component={showHelloToast} exact={true} />
         <Route path= "/cards" component={card} exact={true} />
         <Route path="/fcCompTemp" component={FcCompTemp} exact={true} />
+        <Route path="/tickets" component={tickets} exact={true} />
+
         </Route>
         <Route exact path="/">
           <Redirect to="/main" />

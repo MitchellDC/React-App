@@ -2,7 +2,7 @@
   "name": "nbaApp",
   "integrations": {
     "capacitor": {}
-  },
+},
   "type": "react"
   
 }
